@@ -7,6 +7,7 @@ License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.gnome.org/pub/gnome/pre-gnome2/sources/%{name}/%{name}-%{version}.tar.bz2
 URL:		http://www.gnome.org/
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,7 +20,7 @@ Ten pakiet dostarcza makra do budowania pakietów GNOME.
 %setup -q
 
 %build
-%configure
+%configure --build=%{_build}
 
 %{__make}
 
