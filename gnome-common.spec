@@ -12,6 +12,10 @@ Group:		Development/Tools
 Source0:	%{name}-%{version}-%{snap}.tar.bz2
 # Source0-md5:	1b50dc13f5249a32a5055df9382cf5c8
 URL:		http://www.gnome.org/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool
+Requires:	automake
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,7 +33,8 @@ Ten pakiet dostarcza makra do budowania pakietów GNOME.
 %{__aclocal}
 %{__automake}
 %{__autoconf}
-%configure --build=%{_build}
+%configure \
+	--build=%{_build}
 
 %{__make}
 
