@@ -1,7 +1,7 @@
 
 %define		snap		20030710
 
-Summary:	Common macros useful for building gnome packages
+Summary:	Common macros useful for building GNOME packages
 Summary(pl):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
 Version:	2.3.0
