@@ -1,0 +1,19 @@
+diff -aurN gnome-common-2.8.0.orig/doc-build/omf.make gnome-common-2.8.0/doc-build/omf.make
+--- gnome-common-2.8.0.orig/doc-build/omf.make	2003-05-24 17:16:25.000000000 +0200
++++ gnome-common-2.8.0/doc-build/omf.make	2004-12-06 19:09:24.392849504 +0100
+@@ -45,7 +45,6 @@
+ 	for file in $(omffile); do \
+ 		$(INSTALL_DATA) $$file.out $(DESTDIR)$(omf_dest_dir)/$$file; \
+ 	done
+-	-scrollkeeper-update -p $(scrollkeeper_localstate_dir) -o $(DESTDIR)$(omf_dest_dir)
+ 
+ uninstall-local-omf:
+ 	-for file in $(srcdir)/*.omf; do \
+@@ -53,7 +52,6 @@
+ 		rm -f $(omf_dest_dir)/$$basefile; \
+ 	done
+ 	-rmdir $(omf_dest_dir)
+-	-scrollkeeper-update -p $(scrollkeeper_localstate_dir)
+ 
+ clean-local-omf:
+ 	-for file in $(omffile); do \
