@@ -1,6 +1,6 @@
-diff -Nuard gnome-common-2.3.0.orig/macros2/autogen.sh gnome-common-2.3.0/macros2/autogen.sh
---- gnome-common-2.3.0.orig/macros2/autogen.sh	2003-07-10 12:13:56.000000000 +0200
-+++ gnome-common-2.3.0/macros2/autogen.sh	2003-09-16 23:45:24.000000000 +0200
+diff -Nuard gnome-common-2.3.0.orig/macros2/gnome-autogen.sh gnome-common-2.3.0/macros2/gnome-autogen.sh
+--- gnome-common-2.3.0.orig/macros2/gnome-autogen.sh	2003-07-10 12:13:56.000000000 +0200
++++ gnome-common-2.3.0/macros2/gnome-autogen.sh	2003-09-16 23:45:24.000000000 +0200
 @@ -7,7 +7,7 @@
  
  # default version requirements ...
