@@ -1,4 +1,5 @@
 Summary:	Common macros useful for building GNOME packages
+Summary(es):	Macros comunes útiles para construir paquetes de GNOME
 Summary(pl):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
 Version:	2.4.0
@@ -12,12 +13,16 @@ URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
+Requires:	autoconf
 Requires:	automake >= 1.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 gnome-common provides macros for GNOME modules.
+
+%description -l es
+gnome-common provee unos macros para los módulos de GNOME.
 
 %description -l pl
 Ten pakiet dostarcza makra do budowania pakietów GNOME.
