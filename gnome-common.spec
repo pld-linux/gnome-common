@@ -11,6 +11,8 @@ URL:		http://www.gnome.org/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
+
 %description
 gnome-common provides macros for GNOME modules.
 
@@ -21,7 +23,8 @@ Ten pakiet dostarcza makra do budowania pakietów GNOME.
 %setup -q
 
 %build
-%configure --build=%{_build}
+%configure \
+	--build=%{_build}
 
 %{__make}
 
