@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/1.2/%{name}-%{version}.tar.bz2
+# Source0-md5: 4b430c6443860e01e4bd89cadf82649b
 URL:		http://www.gnome.org/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
