@@ -2,7 +2,7 @@ Summary:	Common macros useful for building gnome packages
 Summary(pl):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
 Version:	1.2.4
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.gnome.org/pub/gnome/pre-gnome2/sources/%{name}/%{name}-%{version}.tar.bz2
