@@ -1,16 +1,12 @@
-
-%define		snap		20030710
-
 Summary:	Common macros useful for building GNOME packages
 Summary(pl):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
-Version:	2.3.0
-Release:	0.%{snap}.1
+Version:	2.4.0
+Release:	1
 License:	GPL
 Group:		Development/Tools
-#Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/1.2/%{name}-%{version}.tar.bz2
-Source0:	%{name}-%{version}-%{snap}.tar.bz2
-# Source0-md5:	1b50dc13f5249a32a5055df9382cf5c8
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/2.4/%{name}-%{version}.tar.bz2
+# Source0-md5:	9f5163e616b2a02af633de9c82557fa0
 Patch0:		%{name}-am-1.7.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
