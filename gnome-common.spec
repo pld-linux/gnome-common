@@ -2,12 +2,12 @@ Summary:	Common macros useful for building GNOME packages
 Summary(es):	Macros comunes útiles para construir paquetes de GNOME
 Summary(pl):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
-Version:	2.4.0
-Release:	2
+Version:	2.8.0
+Release:	1
 License:	GPL
 Group:		Development/Tools
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/2.4/%{name}-%{version}.tar.bz2
-# Source0-md5:	9f5163e616b2a02af633de9c82557fa0
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/2.8/%{name}-%{version}.tar.bz2
+# Source0-md5:	4630d4cf2b83499c89211b3ae76b662f
 Patch0:		%{name}-am-1.7.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
@@ -43,6 +43,7 @@ Ten pakiet dostarcza makra do budowania pakietów GNOME.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -52,6 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%{_aclocaldir}/gnome-macros
-%{_aclocaldir}/gnome2-macros
+%{_aclocaldir}/*.m4
 %{_datadir}/%{name}
