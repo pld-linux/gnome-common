@@ -1,12 +1,16 @@
+
+%define		snap		20030710
+
 Summary:	Common macros useful for building gnome packages
 Summary(pl):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
-Version:	1.2.4
-Release:	2
+Version:	2.3.0
+Release:	0.%{snap}
 License:	GPL
 Group:		Development/Tools
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/1.2/%{name}-%{version}.tar.bz2
-# Source0-md5: 4b430c6443860e01e4bd89cadf82649b
+#Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/1.2/%{name}-%{version}.tar.bz2
+Source0:	%{name}-%{version}-%{snap}.tar.bz2
+# Source0-md5:	1b50dc13f5249a32a5055df9382cf5c8
 URL:		http://www.gnome.org/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -21,6 +25,10 @@ Ten pakiet dostarcza makra do budowania pakietów GNOME.
 %setup -q
 
 %build
+%{__libtoolize}
+%{__aclocal}
+%{__automake}
+%{__autoconf}
 %configure --build=%{_build}
 
 %{__make}
@@ -38,3 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_aclocaldir}/gnome-macros
 %{_aclocaldir}/gnome2-macros
+%{_datadir}/%{name}
