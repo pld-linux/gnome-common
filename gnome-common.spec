@@ -1,5 +1,6 @@
+Summary:	Common macros useful for building gnome packages
+Summary(pl):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
-Summary:	contains usefull macro's common to building gnome packages
 Version:	1.2.4
 Release:	0.1
 License:	GPL
@@ -9,7 +10,10 @@ URL:		http://www.gnome.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-gnome-common provides macro's for GNOME modules
+gnome-common provides macros for GNOME modules.
+
+%description -l pl
+Ten pakiet dostarcza makra do budowania pakietów GNOME.
 
 %prep
 %setup -q
