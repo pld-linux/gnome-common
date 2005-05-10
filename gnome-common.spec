@@ -3,7 +3,7 @@ Summary(es):	Macros comunes útiles para construir paquetes de GNOME
 Summary(pl):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
 Version:	2.8.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/2.8/%{name}-%{version}.tar.bz2
