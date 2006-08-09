@@ -6,7 +6,7 @@ Version:	2.12.0
 Release:	2
 License:	GPL
 Group:		Development/Tools
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/2.12/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-common/2.12/%{name}-%{version}.tar.bz2
 # Source0-md5:	817be32ab5dc7a5d56e6ec50d56100f8
 Patch0:		%{name}-am-1.7.patch
 Patch1:		%{name}-omf.patch
@@ -15,7 +15,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
 Requires:	autoconf >= 2.53
-Requires:	automake >= 1.7
+Requires:	automake >= 1:1.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
