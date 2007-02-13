@@ -1,6 +1,6 @@
 Summary:	Common macros useful for building GNOME packages
-Summary(es.UTF-8):   Macros comunes útiles para construir paquetes de GNOME
-Summary(pl.UTF-8):   Wspólne makra przydatne do budowania pakietów GNOME
+Summary(es.UTF-8):	Macros comunes útiles para construir paquetes de GNOME
+Summary(pl.UTF-8):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
 Version:	2.12.0
 Release:	3
