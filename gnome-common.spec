@@ -2,21 +2,20 @@ Summary:	Common macros useful for building GNOME packages
 Summary(es.UTF-8):	Macros comunes útiles para construir paquetes de GNOME
 Summary(pl.UTF-8):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
-Version:	2.12.0
-Release:	3
+Version:	2.18.0
+Release:	1
 License:	GPL
 Group:		Development/Tools
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-common/2.12/%{name}-%{version}.tar.bz2
-# Source0-md5:	817be32ab5dc7a5d56e6ec50d56100f8
-Patch0:		%{name}-am-1.7.patch
-Patch1:		%{name}-omf.patch
-Patch2:		%{name}-docdir.patch
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-common/2.18/%{name}-%{version}.tar.bz2
+# Source0-md5:	567172e685fc0783b1d6ab9843a85d6a
+Patch0:		%{name}-omf.patch
+Patch1:		%{name}-docdir.patch
 URL:		http://www.gnome.org/
-BuildRequires:	autoconf
-BuildRequires:	automake
+BuildRequires:	autoconf >= 2.54
+BuildRequires:	automake >= 1:1.9
 BuildRequires:	libtool
 Requires:	autoconf >= 2.53
-Requires:	automake >= 1:1.7
+Requires:	automake >= 1:1.9
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,7 +32,6 @@ Ten pakiet dostarcza makra do budowania pakietów GNOME.
 %setup -q
 %patch0 -p1
 %patch1 -p1
-%patch2 -p1
 
 %build
 %{__libtoolize}
