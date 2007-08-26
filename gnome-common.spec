@@ -4,9 +4,9 @@ Summary(pl.UTF-8):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
 Version:	2.18.0
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Development/Tools
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-common/2.18/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-common/2.18/%{name}-%{version}.tar.bz2
 # Source0-md5:	567172e685fc0783b1d6ab9843a85d6a
 Patch0:		%{name}-omf.patch
 Patch1:		%{name}-docdir.patch
