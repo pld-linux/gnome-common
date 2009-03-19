@@ -2,12 +2,12 @@ Summary:	Common macros useful for building GNOME packages
 Summary(es.UTF-8):	Macros comunes útiles para construir paquetes de GNOME
 Summary(pl.UTF-8):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
-Version:	2.24.0
+Version:	2.26.0
 Release:	1
 License:	GPL v2
 Group:		Development/Tools
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-common/2.24/%{name}-%{version}.tar.bz2
-# Source0-md5:	f72230d19ab9f2fa8923dcb078c69e9a
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-common/2.26/%{name}-%{version}.tar.bz2
+# Source0-md5:	196daa38cb21d91da1d6ec085f1e158b
 Patch0:		%{name}-omf.patch
 Patch1:		%{name}-docdir.patch
 URL:		http://www.gnome.org/
