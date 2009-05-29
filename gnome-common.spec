@@ -3,13 +3,14 @@ Summary(es.UTF-8):	Macros comunes útiles para construir paquetes de GNOME
 Summary(pl.UTF-8):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
 Version:	2.26.0
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Development/Tools
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-common/2.26/%{name}-%{version}.tar.bz2
 # Source0-md5:	196daa38cb21d91da1d6ec085f1e158b
 Patch0:		%{name}-omf.patch
 Patch1:		%{name}-docdir.patch
+Patch2:		%{name}-automake111.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.54
 BuildRequires:	automake >= 1:1.9
@@ -31,6 +32,7 @@ Ten pakiet dostarcza makra do budowania pakietów GNOME.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 %{__aclocal}
