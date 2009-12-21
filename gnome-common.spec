@@ -2,15 +2,14 @@ Summary:	Common macros useful for building GNOME packages
 Summary(es.UTF-8):	Macros comunes útiles para construir paquetes de GNOME
 Summary(pl.UTF-8):	Wspólne makra przydatne do budowania pakietów GNOME
 Name:		gnome-common
-Version:	2.26.0
-Release:	2
+Version:	2.28.0
+Release:	1
 License:	GPL v2
 Group:		Development/Tools
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-common/2.26/%{name}-%{version}.tar.bz2
-# Source0-md5:	196daa38cb21d91da1d6ec085f1e158b
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-common/2.28/%{name}-%{version}.tar.bz2
+# Source0-md5:	30daabb0ca4898fea2647999e7813e8f
 Patch0:		%{name}-omf.patch
 Patch1:		%{name}-docdir.patch
-Patch2:		%{name}-automake111.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.54
 BuildRequires:	automake >= 1:1.9
@@ -32,7 +31,6 @@ Ten pakiet dostarcza makra do budowania pakietów GNOME.
 %setup -q
 %patch0 -p1
 %patch1 -p1
-%patch2 -p1
 
 %build
 %{__aclocal}
@@ -54,6 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/gnome-autogen.sh
+%attr(755,root,root) %{_bindir}/gnome-doc-common
 %{_aclocaldir}/*.m4
-%{_datadir}/%{name}
+%{_datadir}/gnome-common
