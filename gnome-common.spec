@@ -54,5 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/gnome-autogen.sh
 %attr(755,root,root) %{_bindir}/gnome-doc-common
-%{_aclocaldir}/*.m4
+%{_aclocaldir}/gnome-common.m4
+%{_aclocaldir}/gnome-compiler-flags.m4
 %{_datadir}/gnome-common
