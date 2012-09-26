@@ -51,14 +51,14 @@
  
  clean-local: clean-local-doc clean-local-omf
  
---- gnome-common-2.12.0/doc-build/omf.make.orig	2006-08-09 19:07:44.823990000 +0200
-+++ gnome-common-2.12.0/doc-build/omf.make	2006-08-09 19:13:24.953247000 +0200
-@@ -36,7 +36,7 @@
- 
- omf_timestamp: $(omffile)
+--- gnome-common-3.5.91/doc-build/omf.make.orig	2012-09-26 19:39:18.511208144 +0200
++++ gnome-common-3.5.91/doc-build/omf.make	2012-09-26 19:42:35.930138821 +0200
+@@ -38,7 +38,7 @@ omf_timestamp: $(omffile)
  	-for file in $(omffile); do \
--	  scrollkeeper-preinstall $(docdir)/$(docname).xml $(srcdir)/$$file $$file.out; \
-+	  scrollkeeper-preinstall $(gtkdochelpdir)/$(docname).xml $(srcdir)/$$file $$file.out; \
+ 	  absfile=$(srcdir)/$$file \
+ 	  test -r $$file && absfile=$$file \
+-	  scrollkeeper-preinstall $(docdir)/$(docname).xml $$absfile $$file.out; \
++	  scrollkeeper-preinstall $(gtkdochelpdir)/$(docname).xml $$absfile $$file.out; \
  	done; \
  	touch omf_timestamp
  
