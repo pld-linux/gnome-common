@@ -55,8 +55,8 @@
 +++ gnome-common-3.5.91/doc-build/omf.make	2012-09-26 19:42:35.930138821 +0200
 @@ -38,7 +38,7 @@ omf_timestamp: $(omffile)
  	-for file in $(omffile); do \
- 	  absfile=$(srcdir)/$$file \
- 	  test -r $$file && absfile=$$file \
+ 	  absfile=$(srcdir)/$$file; \
+ 	  test -r $$file && absfile=$$file; \
 -	  scrollkeeper-preinstall $(docdir)/$(docname).xml $$absfile $$file.out; \
 +	  scrollkeeper-preinstall $(gtkdochelpdir)/$(docname).xml $$absfile $$file.out; \
  	done; \
