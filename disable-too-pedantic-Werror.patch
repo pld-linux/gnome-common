@@ -1,0 +1,10 @@
+--- gnome-common-3.14.0/macros2/gnome-compiler-flags.m4~	2014-09-22 13:32:01.000000000 +0200
++++ gnome-common-3.14.0/macros2/gnome-compiler-flags.m4	2015-03-24 00:20:00.725525499 +0100
+@@ -47,7 +47,6 @@
+         -Werror=pointer-arith \
+         -Werror=init-self \
+         -Werror=format-security \
+-        -Werror=format=2 \
+         -Werror=missing-include-dirs \
+     "
+ 
