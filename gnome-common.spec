@@ -40,7 +40,8 @@ Ten pakiet dostarcza makra do budowania pakietów GNOME.
 %{__automake}
 %{__autoconf}
 %configure \
-	--build=%{_build}
+	--build=%{_build} \
+	--with-autoconf-archive
 
 %{__make}
 
@@ -49,9 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	INSTALL="install -p" \
 	DESTDIR=$RPM_BUILD_ROOT
-
-%{__rm} $RPM_BUILD_ROOT%{_aclocaldir}/ax_check_enable_debug.m4
-%{__rm} $RPM_BUILD_ROOT%{_aclocaldir}/ax_code_coverage.m4
 
 %clean
 rm -rf $RPM_BUILD_ROOT
