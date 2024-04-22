@@ -1,10 +1,11 @@
---- gnome-common-3.14.0/macros2/gnome-compiler-flags.m4~	2014-09-22 13:32:01.000000000 +0200
-+++ gnome-common-3.14.0/macros2/gnome-compiler-flags.m4	2015-03-24 00:20:00.725525499 +0100
-@@ -47,7 +47,6 @@
+diff -urNp -x '*.orig' gnome-common-3.18.0.org/macros2/gnome-compiler-flags.m4 gnome-common-3.18.0/macros2/gnome-compiler-flags.m4
+--- gnome-common-3.18.0.org/macros2/gnome-compiler-flags.m4	2015-01-27 19:59:24.000000000 +0100
++++ gnome-common-3.18.0/macros2/gnome-compiler-flags.m4	2024-04-22 22:43:26.872914798 +0200
+@@ -47,7 +47,6 @@ AU_DEFUN([GNOME_COMPILE_WARNINGS],[
          -Werror=pointer-arith \
          -Werror=init-self \
          -Werror=format-security \
 -        -Werror=format=2 \
          -Werror=missing-include-dirs \
+         -Werror=return-type \
      "
- 
