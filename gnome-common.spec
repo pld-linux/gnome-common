@@ -33,7 +33,7 @@ Ten pakiet dostarcza makra do budowania pakietów GNOME.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__aclocal}
